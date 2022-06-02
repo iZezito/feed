@@ -15,7 +15,6 @@
 </div>
 <div class="card text-dark bg-light mb-3 w-75" th:each=" n : ${noticiaslist}" th:object="${n}">
     <div class="card-body">
-        <h5 class="card-title">Titulinho</h5>
         <p class="card-text" th:text="*{descricao}"></p>
     </div>
 </div>
