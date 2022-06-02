@@ -1,0 +1,16 @@
+
+.quadrado {
+    background: red;
+    width: 50px;
+    height: 50px;
+    animation: go-back 1s;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
