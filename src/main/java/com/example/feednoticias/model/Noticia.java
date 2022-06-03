@@ -5,7 +5,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.Max;
 import javax.validation.constraints.NotBlank;
+import java.util.ArrayList;
+import java.util.List;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -16,5 +20,12 @@ public class Noticia {
     private Long id;
     @NotBlank
     private String descricao;
+    private ArrayList<String> comentarios = new ArrayList<>();
+
+
+
+    public void addComentario(String s){
+        comentarios.add(s);
+    }
 
 }
